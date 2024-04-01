@@ -1,0 +1,16 @@
+{
+  "name": "rarelyjs",
+  "version": "1.0.0",
+  "description": "常用JS函数库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rarely",
+    "函数库",
+    "js"
+  ],
+  "author": "lyz",
+  "license": "ISC"
+}
