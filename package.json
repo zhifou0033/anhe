@@ -1,6 +1,6 @@
 {
   "name": "rarelyjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "常用JS函数库",
   "main": "index.js",
   "scripts": {
@@ -12,5 +12,5 @@
     "js"
   ],
   "author": "lyz",
-  "license": "ISC"
+  "license": "MIT"
 }
