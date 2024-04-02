@@ -1,7 +1,7 @@
 {
   "name": "rarelyjs",
   "version": "1.0.2",
-  "description": "常用JS函数库",
+  "description": "Common JS function library",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +12,8 @@
     "js"
   ],
   "author": "lyz",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.4.3"
+  }
 }
