@@ -2,9 +2,15 @@
   "name": "rarelyjs",
   "version": "1.0.2",
   "description": "Common JS function library",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1379769649/rarelyjs.git"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc -p ."
   },
   "keywords": [
     "rarely",
@@ -13,7 +19,7 @@
   ],
   "author": "lyz",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "typescript": "^5.4.3"
   }
 }
