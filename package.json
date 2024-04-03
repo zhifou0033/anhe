@@ -1,9 +1,8 @@
 {
   "name": "rarelyjs",
   "version": "1.0.2",
+  "type": "module",
   "description": "Common JS function library",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/1379769649/rarelyjs.git"
@@ -20,6 +19,8 @@
   "author": "lyz",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^5.4.3"
+    "@vueuse/core": "^10.9.0",
+    "typescript": "^5.4.3",
+    "vite": "^5.2.7"
   }
 }
