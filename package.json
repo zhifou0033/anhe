@@ -19,7 +19,10 @@
   "author": "lyz",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^20.12.4",
     "@vueuse/core": "^10.9.0",
+    "rollup": "^4.14.0",
+    "rollup-plugin-dts": "^6.1.0",
     "typescript": "^5.4.3",
     "vite": "^5.2.7"
   }
