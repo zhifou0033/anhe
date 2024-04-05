@@ -2,21 +2,25 @@
   "name": "@rarelyjs/core",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "types": "./index.d.cts",
   "keywords": [
     "rarelyjs",
     "rarelyjs/core"
   ],
   "author": "lyz",
   "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/1379769649/rarelyjs.git"
+    "url": "https://github.com/1379769649/rarelyjs.git",
+    "directory": "packages/core"
   },
   "devDependencies": {
     "@vueuse/core": "*"
