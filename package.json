@@ -8,8 +8,10 @@
     "url": "https://github.com/1379769649/rarelyjs.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tsc -p ."
+    "build": "esno scripts/build.ts",
+    "clean": "rimraf --glob dist types \"packages/*/dist\"",
+    "build:rollup": "rollup --config=rollup.config.ts --configPlugin=rollup-plugin-esbuild",
+    "test": "node rollup.config.ts"
   },
   "keywords": [
     "rarely",
@@ -19,10 +21,17 @@
   "author": "lyz",
   "license": "MIT",
   "devDependencies": {
+    "@rollup/plugin-json": "^6.1.0",
     "@types/node": "^20.12.4",
     "@vueuse/core": "^10.9.0",
+    "esno": "^4.7.0",
+    "fast-glob": "^3.3.2",
+    "fs-extra": "^11.2.0",
+    "rimraf": "^5.0.5",
     "rollup": "^4.14.0",
     "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-esbuild": "^6.1.1",
+    "rollup-plugin-pure": "^0.2.1",
     "typescript": "^5.4.3",
     "vite": "^5.2.7"
   }
