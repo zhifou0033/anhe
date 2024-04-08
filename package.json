@@ -1,11 +1,11 @@
 {
-  "name": "rarelyjs",
+  "name": "anhe",
   "version": "1.0.2",
   "type": "module",
   "description": "Common JS function library",
   "repository": {
     "type": "git",
-    "url": "https://github.com/1379769649/rarelyjs.git"
+    "url": "https://github.com/1379769649/anhe.git"
   },
   "scripts": {
     "build": "esno scripts/build.ts",
@@ -14,7 +14,7 @@
     "test": "vitest"
   },
   "keywords": [
-    "rarely",
+    "anhe",
     "函数库",
     "js"
   ],

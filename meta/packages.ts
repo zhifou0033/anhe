@@ -9,6 +9,15 @@ interface metaData {
 }
 export const packages: metaData[] = [
     {
+        name: 'anhe',
+        description: '',
+        build: true,
+        mjs: true,
+        cjs: true,
+        dts: true,
+        external: []
+    },
+    {
         name: 'core',
         description: 'Collection of essential Vue Composition Utilities',
         build: true,
