@@ -18,20 +18,20 @@ const pluginPure = pure({
 console.log(require);
 
 for (const { name, external, build, cjs, mjs, dts, target = 'es2018' } of packages) {
-    if (build === false) continue;
+    if (!build) continue;
     const functionNames = ['index'];
     for (const fn of functionNames) {
         const input = fn === 'index' ? `packages/${name}/index.ts` : `packages/${name}/${fn}/index.ts`
         const output: OutputOptions[] = []
 
-        if (mjs !== false) {
+        if (mjs) {
             output.push({
                 file: `packages/${name}/dist/${fn}.mjs`,
                 format: 'es',
             })
         }
 
-        if (cjs !== false) {
+        if (cjs) {
             output.push({
                 file: `packages/${name}/dist/${fn}.cjs`,
                 format: 'cjs',
@@ -48,7 +48,7 @@ for (const { name, external, build, cjs, mjs, dts, target = 'es2018' } of packag
                 ...(external || []),
             ],
         });
-        if (dts !== false) {
+        if (dts) {
             configs.push({
                 input,
                 output: [
